@@ -35,13 +35,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'authentication.apps.AuthenticationConfig',
-    'api.apps.ApiConfig',
     'django_extensions',
     'rest_framework',
     'django_filters',
     'django_nose',
     'rest_framework_swagger',
+    'authentication',
+    'recipe_api',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
-
+ROOT_URLCONF = 'recipe_book.urls'
 
 TEMPLATES = [
     {
